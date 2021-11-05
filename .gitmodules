@@ -1,0 +1,4 @@
+[submodule "xalachi/fecrsh"]
+	path = xalachi/fecrsh
+	url = git@github.com:xalachi/fecrsh.git
+	branch = master
