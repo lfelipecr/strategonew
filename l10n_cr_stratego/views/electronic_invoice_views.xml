@@ -33,9 +33,9 @@
 
     <record id="account_move_form_view_inherit_fecr_supp_stratego" model="ir.ui.view">
         <field name="model">account.move</field>
-        <field name="inherit_id" ref="l10n_cr_electronic_invoice.account_move_form_view_inherit_fecr"/>
+        <field name="inherit_id" ref="l10n_cr_electronic_invoice.account_move_supplier_form_view_inherit_fecr"/>
         <field name="arch" type="xml">
-            <!--<xpath expr="//button[@name='send_mrs_to_hacienda']" position="attributes">
+            <xpath expr="//button[@name='send_mrs_to_hacienda']" position="attributes">
                 <attribute name="attrs">
                     {'invisible':[
                         '|','|','|',
@@ -45,7 +45,7 @@
                         ('state','=','draft'),
                         ]}
                 </attribute>
-            </xpath>-->
+            </xpath>
             <xpath expr="//button[@name='generate_and_send_invoices']" position="attributes">
                 <attribute name="attrs">
                    {'invisible':['|', ('tipo_documento','in',('FEC','NN')), ('state_send_invoice','not in', (False,'rechazado', 'error'))]}
